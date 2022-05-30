@@ -4,6 +4,14 @@
   align-content: space-between;
   padding: 0 70px 0 70px;
 }
+@media (max-width: 576px) {
+  .container {
+    margin: 0 auto;
+    align-content: center;
+    padding: 0 24px 0 24px;
+    max-width: 576px;
+  }
+}
 
 .title {
   font-family: "Inconsolata", monospace;
@@ -46,6 +54,28 @@
   font-size: 14px;
   color: #ffffff;
   margin-top: 64px;
+}
+@media (max-width: 576px) {
+  .main {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main img {
+    width: 100%;
+  }
+  .main .text {
+    margin-left: 0;
+  }
+  .main .text .title {
+    font-size: 48px;
+    width: 100%;
+  }
+  .main .text .content {
+    font-size: 18px;
+    width: 100%;
+  }
 }
 .info {
   margin-top: 308px;
